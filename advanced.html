@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="advance.css">
+    </head>
+    <body>
+        <div id="container-links">
+            <a href="index.html">Main Search</a>
+            <a href="image.html">Image Search</a>
+        </div>
+        <div>
+            <h1 style="font-weight: normal;" id="logo">Google</h1>
+        </div>
+        <div id="logo-subtext">
+            <p>Advanced Search</p>
+        </div>
+        <div class="line"></div>
+        <div id="container">
+            <form action="https://www.google.com/search">
+                <div class="bar">
+                    <div>
+                        <label for="as_q">all these words:</label>
+                    </div>
+                    <div>
+                        <input type="text" name="as_q">
+                    </div>
+                </div>
+                <div class="bar">
+                    <div>
+                        <label for="as_epq">this exact word or phrase:</label>
+                    </div>
+                    <div>
+                        <input type="text" name="as_epq">
+                    </div>
+                </div>
+                <div class="bar">
+                    <div>
+                        <label for="as_oq">any of these words:</label>
+                    </div>
+                    <div>
+                        <input type="text" name="as_oq">
+                    </div>
+                </div>
+                <div class="bar">
+                    <div>
+                        <label for="as_eq">none of these words:</label>
+                    </div>
+                    <div>
+                        <input type="text" name="as_eq">
+                    </div>
+                </div>
+                <input type="hidden" name="hl" value="en">
+                <input type="hidden" name="safe" value="off">
+                <div>
+                    <input type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
