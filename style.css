@@ -1,54 +1,101 @@
 body {
-    margin: 0;
-    background-color: rgb(31, 31, 31);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #202124;
 }
-#container-links {
-    margin: 15px;
-    display: flex;
-    gap: 15px;
-    justify-content: flex-end;
+
+.top-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 16px 20px;
+  font-size: 13px;
 }
-#container-links a {
-    color: white;
-    text-decoration: none;
-    font-family: Arial;
-    font-size: 14px;
+
+.top-links a {
+  color: #202124;
+  text-decoration: none;
 }
-#logo, #logo-subtext {
-    text-align: center;
-    font-family: Arial;
+
+.top-links a:hover {
+  text-decoration: underline;
 }
-#logo {
-    color: white;
-    font-size: 60px;
-    margin-top: 100px;
+
+.center {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
 }
-#logo-subtext {
-    color: rgb(29, 159, 202);
-    font-size: 20px;
-    margin-top: -45px;
+
+.logo {
+  font-size: 72px;
+  font-weight: 600;
+  margin: 0 0 24px;
+  letter-spacing: -1px;
 }
-form {
-    margin-top:40px;
-    text-align: center;
+
+.logo-wrap {
+  position: relative;
+  margin-bottom: 24px;
 }
-.bar input, .buttons input {
-    border-radius: 20px;
-    border: 0px;
-    color: white;
-    padding: 10px;
+
+.logo-sub {
+  position: absolute;
+  right: 6px;
+  bottom: 10px;
+  font-size: 16px;
+  color: #1a73e8;
 }
-.bar input{
-    background-color:  rgb(78, 78, 78);
-    width: 500px;
+
+.search-form {
+  width: min(560px, 92vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.search-input {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-input:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: transparent;
+}
+
+.search-input:focus {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: transparent;
+}
+
 .buttons {
-    margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
 }
-.buttons input {
-    background-color:  rgb(66, 66, 66);
+
+.btn {
+  height: 36px;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: #f8f9fa;
+  color: #3c4043;
+  font-size: 14px;
+  cursor: pointer;
 }
-.buttons input:hover {
-    border: 1px solid white;
-    cursor: pointer;
+
+.btn:hover {
+  border-color: #dadce0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }

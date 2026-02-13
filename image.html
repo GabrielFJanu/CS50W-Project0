@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Image Search</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="container-links">
-            <a href="index.html">Main Search</a>
-            <a href="advanced.html">Advanced Search</a>
-        </div>
-        <div>
-            <h1 id="logo">Google</h1>
-            <p id="logo-subtext">Images</p>
-        </div>
-        <div>
-            <form action="https://www.google.com/search">
-                <div class="bar">
-                    <input type="text" name="q">
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-links">
+      <a href="index.html">Google Search</a>
+      <a href="advanced.html">Advanced Search</a>
+    </div>
 
-                <input type="hidden" name="tbm" value="isch">
+    <main class="center">
+      <div class="logo-wrap">
+        <h1 class="logo">Google</h1>
+        <span class="logo-sub">Images</span>
+      </div>
 
-                <div class="buttons">
-                    <input type="submit" value="Google Image Search">
-                </div>
-            </form>
+      <form action="https://www.google.com/search" method="get" class="search-form">
+        <input class="search-input" type="text" name="q" autocomplete="off" />
+        <input type="hidden" name="tbm" value="isch" />
+
+        <div class="buttons">
+          <input class="btn" type="submit" value="Google Image Search" />
         </div>
-    </body>
+      </form>
+    </main>
+  </body>
 </html>

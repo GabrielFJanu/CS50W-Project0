@@ -1,63 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Advanced Search</title>
-        <link rel="stylesheet" href="advance.css">
-    </head>
-    <body>
-        <div id="container-links">
-            <a href="index.html">Main Search</a>
-            <a href="image.html">Image Search</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="advance.css" />
+  </head>
+  <body>
+    <div class="top-links">
+      <a href="index.html">Google Search</a>
+      <a href="image.html">Image Search</a>
+    </div>
+
+    <header class="adv-header">
+      <div class="adv-logo">Google</div>
+      <div class="adv-title">Advanced Search</div>
+    </header>
+
+    <main class="adv-main">
+      <form action="https://www.google.com/search" method="get">
+        <div class="row">
+          <label for="as_q">all these words:</label>
+          <input id="as_q" type="text" name="as_q" />
         </div>
-        <div>
-            <h1 style="font-weight: normal;" id="logo">Google</h1>
+
+        <div class="row">
+          <label for="as_epq">this exact word or phrase:</label>
+          <input id="as_epq" type="text" name="as_epq" />
         </div>
-        <div id="logo-subtext">
-            <p>Advanced Search</p>
+
+        <div class="row">
+          <label for="as_oq">any of these words:</label>
+          <input id="as_oq" type="text" name="as_oq" />
         </div>
-        <div class="line"></div>
-        <div id="container">
-            <form action="https://www.google.com/search">
-                <div class="bar">
-                    <div>
-                        <label for="as_q">all these words:</label>
-                    </div>
-                    <div>
-                        <input type="text" name="as_q">
-                    </div>
-                </div>
-                <div class="bar">
-                    <div>
-                        <label for="as_epq">this exact word or phrase:</label>
-                    </div>
-                    <div>
-                        <input type="text" name="as_epq">
-                    </div>
-                </div>
-                <div class="bar">
-                    <div>
-                        <label for="as_oq">any of these words:</label>
-                    </div>
-                    <div>
-                        <input type="text" name="as_oq">
-                    </div>
-                </div>
-                <div class="bar">
-                    <div>
-                        <label for="as_eq">none of these words:</label>
-                    </div>
-                    <div>
-                        <input type="text" name="as_eq">
-                    </div>
-                </div>
-                <input type="hidden" name="hl" value="en">
-                <input type="hidden" name="safe" value="off">
-                <div>
-                    <input type="submit" value="Advanced Search">
-                </div>
-            </form>
+
+        <div class="row">
+          <label for="as_eq">none of these words:</label>
+          <input id="as_eq" type="text" name="as_eq" />
         </div>
-    </body>
+
+        <div class="actions">
+          <input class="adv-btn" type="submit" value="Advanced Search" />
+        </div>
+      </form>
+    </main>
+  </body>
 </html>

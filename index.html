@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Search</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="container-links">
-            <a href="image.html">Image Search</a>
-            <a href="advanced.html">Advanced Search</a>
-        </div>
-        <div>
-            <h1 id="logo">Google</h1>
-        </div>
-        <div>
-            <form action="https://www.google.com/search">
-                <div class="bar">
-                    <input type="text" name="q">
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-links">
+      <a href="image.html">Image Search</a>
+      <a href="advanced.html">Advanced Search</a>
+    </div>
 
-                <div class="buttons">
-                    <input type="submit" name="btnK" value="Google Search">
-                    <input type="submit" name="btnI" value="I'm Feeling Lucky">
-                </div>
-            </form>
+    <main class="center">
+      <h1 class="logo">Google</h1>
+
+      <form action="https://www.google.com/search" method="get" class="search-form">
+        <input class="search-input" type="text" name="q" autocomplete="off" />
+
+        <div class="buttons">
+          <input class="btn" type="submit" name="btnK" value="Google Search" />
+          <input class="btn" type="submit" name="btnI" value="I'm Feeling Lucky" />
         </div>
-    </body>
+      </form>
+    </main>
+  </body>
 </html>
